@@ -6,7 +6,7 @@ Setup
 1. Clone this repository to your local machine.
 2. Open Terminal and navigate to the directory containing the script.
 3. Run the script with the source directory (Google Drive) and destination directory (iCloud) as arguments. For example:
-"
+`./cron.sh "/path/to/GoogleDrive" "/path/to/iCloud"`
 ## Setting up a Cron Job
 
 To automate the process, you can set up a cron job that runs this script at regular intervals.
@@ -14,6 +14,7 @@ To automate the process, you can set up a cron job that runs this script at regu
 1. Open Terminal.
 2. Type crontab -e to open the cron table for editing.
 3. Add a new line in the following format to schedule the script:
+`* * * * * /path/to/cron.sh "/path/to/GoogleDrive" "/path/to/iCloud"`
 
 This will run the script every minute. You can adjust the timing according to your needs.
 Granting Full Disk Access to Cron
